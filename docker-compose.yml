@@ -1,0 +1,8 @@
+version: '3'
+services:
+  repeqtt:
+    build: .
+    volumes:
+      - './repeqtt.conf:/repeqtt.conf:ro'
+    user: 1000:1000 
+    restart: unless-stopped
